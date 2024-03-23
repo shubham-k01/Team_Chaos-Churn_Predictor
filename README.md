@@ -2,7 +2,7 @@
 
 **Hackathon Project: Aeravat 1.0 at SPIT**
 
-** Predict Customer Churn and Retain Happy Users **
+**Predict Customer Churn and Retain Happy Users**
 
 This project tackles the challenge of customer churn prediction in the telecom industry. By identifying subscribers at risk of leaving, telecom companies can take proactive steps to retain them and boost customer loyalty.
 
@@ -12,7 +12,7 @@ This project leverages Python's powerful data science ecosystem. To set up your 
 
 ```bash
 pip install -r requirements.txt
-
+```
 
 **Project Structure**
 
@@ -46,7 +46,7 @@ Real-Time Predictions: Explore techniques for deploying the model and serving pr
 Unveiling Churn Drivers: Utilize the chosen model to identify the key factors that most significantly contribute to customer churn.
 This project equips you with a solid foundation for building a robust customer churn prediction system. Feel free to tailor it to your specific needs and data to create a truly impactful solution!
 
-```
+
 Key improvements and considerations:
 
 - **Enhanced Titles and Emojis:** Catchy titles and relevant emojis grab attention and improve readability.
