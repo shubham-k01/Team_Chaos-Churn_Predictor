@@ -1,11 +1,12 @@
 # Team_Chaos-Churn_Predictor
 Hackathon project of Aeravat 1.0 at SPIT
 
-This project predicts customer churn, which is the likelihood of a customer discontinuing their service or subscription. By identifying customers at risk of churning, businesses can take proactive steps to retain them.
+This project predicts customer churn of a telecom company, which is the likelihood of a customer discontinuing their service or subscription. By identifying customers at risk of churning, businesses can take proactive steps to retain them.
 
 Getting Started
 
-This project requires Python libraries commonly used for data science tasks. Refer to the requirements.txt file for a list of dependencies and install them using pip install -r requirements.txt.
+This project requires Python libraries commonly used for data science tasks. Refer to the requirements.txt file for a list of dependencies and install them using 
+> pip install -r requirements.txt.
 
 Project Structure
 
