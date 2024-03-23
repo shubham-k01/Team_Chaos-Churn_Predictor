@@ -8,7 +8,7 @@ Getting Started
 This project requires Python libraries commonly used for data science tasks. Refer to the requirements.txt file for a list of dependencies and install them using 
 > pip install -r requirements.txt.
 
-Project Structure
+**Project Structure**
 
 data: This folder contains the raw and processed customer data.
 notebooks: Jupyter notebooks for data exploration, feature engineering, model training, and evaluation.
@@ -16,7 +16,8 @@ models: This folder stores the trained machine learning models for churn predict
 scripts: Any helper scripts used in the project reside here.
 requirements.txt: This file lists the required Python libraries.
 README.md: This file (you are reading it now!).
-Project Overview
+
+**Project Overview**
 
 The notebooks within the notebooks folder guide you through the following steps:
 
