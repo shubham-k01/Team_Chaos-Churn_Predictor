@@ -13,6 +13,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.metrics import accuracy_score,recall_score,precision_score,auc
 from mail_sender import sender
+# from lime_explainer import exp
 
 
 st.set_page_config(
@@ -32,9 +33,9 @@ with st.sidebar:
 
     
 def upload_dataset():
-    st.title('')
-    file = st.file_uploader('Upload dataset:')
+    st.title('Welcome To ChurnShield 😁')
     st.subheader('☁ Please upload data for the churn prediction')
+    file = st.file_uploader('Upload dataset:')
     columns = ['account length','international plan','voice mail plan','number vmail messages',
                 'total day minutes','total day calls','total day charge','total eve minutes',
                 'total eve calls','total eve charge','total night minutes','total night calls',
@@ -59,7 +60,7 @@ def upload_dataset():
         st.write('The models prediction metrics are:',acc )
         print(predictions)
         
-        
+  
 
 
 def perform_current_analysis():
@@ -277,19 +278,22 @@ def provide_suggestions():
     # Add code to provide suggestions based on analysis
     st.header('💡Suggestions Section')
     
-    model_path = '../models/telecom_syriatel/lime_explainer.dill'
+    # model_path = './lime_explainer.pkl'
 
-    # with open(model_path, 'rb') as file:
-    #     lime_explainer = dill.load(file)
-    lime_explainer = joblib.load(model_path)
+    # # with open(model_path, 'rb') as file:
+    # #     lime_explainer = dill.load(file)
+    # lime_explainer = joblib.load(model_path)
         
-    if 'curr_inp' not in st.session_state:
-        st.warning('No customer selected')
-        return
-    x = st.session_state['curr_inp']
-    explaination = lime_explainer.explain_instance(x, predict_fn, )
+    # if 'curr_inp' not in st.session_state:
+    #     st.warning('No customer selected')
+    #     return
+    # x = st.session_state['curr_inp']
+    # explaination = exp()
+
+    # explaination = lime_explainer.explain_instance(x, predict_fn )
     
-    explaination.as_pyplot_figure()
+    # explaination.as_pyplot_figure()
+    st.image('../feature_weights_plot.png')
     name = st.text_input("Enter the recipient name: ")
     pos = st.text_input("Enter the position of recipient: ")
     contact = st.text_input("Enter the contact number: ")
