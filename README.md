@@ -14,7 +14,7 @@ This project leverages Python's powerful data science ecosystem. To set up your 
 pip install -r requirements.txt
 
 
-** Project Structure**
+**Project Structure**
 
 data: Houses the raw and processed customer data.
 notebooks: Immerse yourself in data exploration, feature engineering, model training, and evaluation through Jupyter Notebooks.
@@ -22,7 +22,8 @@ models: Trained machine learning models for churn prediction reside here.
 scripts: Any helper scripts used throughout the project are stored here for easy access.
 requirements.txt: A list of essential Python libraries for running the project.
 README.md: The file you're currently reading (looking good, by the way!).
-** Project Overview**
+
+**Project Overview**
 
 The Jupyter Notebooks in the notebooks folder guide you step-by-step through the following:
 
@@ -37,7 +38,8 @@ Clone this Repository: Bring this project to your local machine using Git.
 Navigate & Open Terminal: Head to the project directory using your terminal.
 Jupyter Notebook Server: Launch the server using jupyter notebook.
 Explore & Run: Open the notebooks in the notebooks folder and execute the code cells sequentially.
-** Further Exploration**
+
+**Further Exploration**
 
 Experiment with Algorithms: Test the waters with different machine learning algorithms and see if they outperform the current champion.
 Real-Time Predictions: Explore techniques for deploying the model and serving predictions in real-time, allowing for immediate action on churn prevention.
