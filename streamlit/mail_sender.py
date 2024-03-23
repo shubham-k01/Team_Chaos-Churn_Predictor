@@ -1,5 +1,6 @@
 import smtplib
 import ssl
+import streamlit as st
 from email.message import EmailMessage
 
 # Define email sender and receiver
@@ -8,7 +9,7 @@ email_password = 'girrzjjbttpdnuqv'
 email_receiver = 'sarojomkar5@gmail.com'
 
 # Set the subject of the email
-subject = 'Check out my new video!'
+# subject = 'Check out my new video!'
 
 recipient_name = ""
 recipient_pos = ""
@@ -24,7 +25,7 @@ def sender(name,pos,contact):
     em = EmailMessage()
     em['From'] = email_sender
     em['To'] = email_receiver
-    em['Subject'] = subject
+    em['Subject'] = "Early Warning against Customer Churn"
     
     html_content = f"""
     <!DOCTYPE html>
@@ -68,5 +69,6 @@ def sender(name,pos,contact):
 
     # Log in and send the email
     with smtplib.SMTP_SSL('smtp.gmail.com', 465, context=context) as smtp:
-        smtp.login(email_sender, email_password)
+        # smtp.login(email_sender, email_password)
+        smtp.login(email_sender, st.secrets['PASS'])
         smtp.send_message(em)
