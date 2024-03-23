@@ -32,7 +32,8 @@ Data Cleaning & Preprocessing: Ensure data quality by handling missing values, o
 Feature Engineering: Craft new features that enhance the prediction model's ability to identify churn.
 Model Training & Evaluation: Train various machine learning algorithms to compete for the title of "best churn predictor." Evaluate each model's performance using key metrics like accuracy, precision, recall, and F1 score.
 Model Selection: Based on the evaluation results, crown the champion model!
-➡️ Running the Notebooks
+
+➡️ **Running the Notebooks**
 
 Clone this Repository: Bring this project to your local machine using Git.
 Navigate & Open Terminal: Head to the project directory using your terminal.
@@ -47,7 +48,7 @@ Unveiling Churn Drivers: Utilize the chosen model to identify the key factors th
 This project equips you with a solid foundation for building a robust customer churn prediction system. Feel free to tailor it to your specific needs and data to create a truly impactful solution!
 
 
-Key improvements and considerations:
+**Key improvements and considerations:**
 
 - **Enhanced Titles and Emojis:** Catchy titles and relevant emojis grab attention and improve readability.
 - **Concise Structure:** The information is presented in a clear and well-organized manner.
